@@ -140,12 +140,8 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 
 # other aliases
-alias toserial='sudo chmod a+rw /dev/serial/by-id/*'
-alias tousb='sudo chmod a+rw /dev/usb/*'
 alias supdate='sudo apt-get update -qq'
 alias supgrade='sudo apt-get upgrade -qq'
-alias myavanetd='cs ~/anaconda2/envs/dev1/src/avanet/avanetd/avanetd'
-alias dev1='source activate dev1'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -158,13 +154,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Oswin for personal preference reasons
+# miscellaneous
+
 # combine cd and ls
 function cs () { 
     cd "$@" && ls 
 }
 # new line for prompts
 PS1="$PS1\n---> "
-
-# added by Anaconda2 2.4.1 installer
-export PATH="/home/oswin/anaconda2/bin:$PATH"
