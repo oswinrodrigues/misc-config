@@ -9,16 +9,16 @@ test -f ~/.bashrc && source ~/.bashrc
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
 }
+branch="\$(parse_git_branch)"
 
-username="\[\033[36;1m\][\u]"                # colour: cyan
-hostname="\[\033[32;1m\][\h]"                # colour: green
-workspace="\[\033[33;1m\][\W]"               # colour: yellow
-branch="\[\033[36;1m\]\$(parse_git_branch)"  # colour: cyan
-at="\[\033[;1m\]@"                           # colour: white
-colon="\[\033[;1m\]:"                        # colour: white
-pipe="\[\033[;1m\]|"                         # colour: white
-prompt="\[\033[m\]$ "                        # colour: white
-PS1="$hostname$workspace$branch$prompt"
+black="\[\033[00m\]"
+green="\[\033[32;1m\]"
+yellow="\[\033[33;1m\]"
+blue="\[\033[01;34m\]"
+cyan="\[\033[36;1m\]"
+white="\[\033[m\]"
+
+PS1="$green[\h]$yellow[\W]$cyan$branch$white\$ "
 export PS1
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
