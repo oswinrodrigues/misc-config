@@ -42,10 +42,6 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
 # Aliases
-
-# Nuvation
-alias nuvssh='sudo ifconfig lo0 alias 127.0.222.222 up && ssh -L 127.0.222.222:1194:10.202.10.0:1194 -t ORodrigues@wdcsshgateway.nuvation.com ssh -N ORodrigues@sshendpoint.nuvation.com'
-
 # Git
 alias gs='git status '
 alias ga='git add '
