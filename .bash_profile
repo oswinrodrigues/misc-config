@@ -11,14 +11,29 @@ parse_git_branch() {
 }
 branch="\$(parse_git_branch)"
 
-black="\[\033[00m\]"
-green="\[\033[32;1m\]"
-yellow="\[\033[33;1m\]"
-blue="\[\033[01;34m\]"
-cyan="\[\033[36;1m\]"
-white="\[\033[m\]"
+# ANSI color codes
+RS="\[\033[0m\]"    # reset
+HC="\[\033[1m\]"    # hicolor
+UL="\[\033[4m\]"    # underline
+INV="\[\033[7m\]"   # inverse background and foreground
+FBLK="\[\033[30m\]" # foreground black
+FRED="\[\033[31m\]" # foreground red
+FGRN="\[\033[32m\]" # foreground green
+FYEL="\[\033[33m\]" # foreground yellow
+FBLE="\[\033[34m\]" # foreground blue
+FMAG="\[\033[35m\]" # foreground magenta
+FCYN="\[\033[36m\]" # foreground cyan
+FWHT="\[\033[37m\]" # foreground white
+BBLK="\[\033[40m\]" # background black
+BRED="\[\033[41m\]" # background red
+BGRN="\[\033[42m\]" # background green
+BYEL="\[\033[43m\]" # background yellow
+BBLE="\[\033[44m\]" # background blue
+BMAG="\[\033[45m\]" # background magenta
+BCYN="\[\033[46m\]" # background cyan
+BWHT="\[\033[47m\]" # background white
 
-PS1="$green[\h]$yellow[\W]$cyan$branch$white\$ "
+PS1="$FGRN[\h]$FYEL[\W]$FCYN$branch$RS\$ "
 export PS1
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
