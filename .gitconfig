@@ -1,0 +1,21 @@
+[user]
+	name = Oswin Rodrigues
+	email = <insert email here>
+[color]
+	ui = auto
+	diff = auto
+[alias]
+	graph = log --all --graph --oneline --decorate=short
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph
+	co = checkout
+	cm = commit
+	cam = commit -am
+	camd = commit -a --amend
+	st = status
+	pl = pull
+	ps = push
+	psf = push -f
+	psfo = push -f -o ci.skip
+	rb = rebase
+[core]
+	editor = code -w
