@@ -15,9 +15,9 @@ macOS
 
 2. Install [Oh-My-Zsh](https://ohmyz.sh/). Also the following add-ons in `~/.oh-my-zsh/custom`
    - In `./plugins` download [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-   - In `./themes` download [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k), [powerlevel10k](https://github.com/romkatv/powerlevel10k), [dracula](https://draculatheme.com/zsh/), [spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
+   - In `./themes` download [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-3. Copy `.zshrc` config from this repo
+3. Copy `.zshrc` config file from this repo
 
 4. Install the following apps for work use:
    - VS Code and turn Settings Sync on
