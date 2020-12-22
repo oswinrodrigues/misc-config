@@ -19,12 +19,16 @@ macOS
 
 3. Copy `.zshrc` config file from this repo
 
-4. Install the following apps for work use:
+4. Install [Homebrew](https://brew.sh/). Then, using this, install:
+   - `python` and `pip`
+   - `tmux`
+
+5. Install the following apps for work use:
    - VS Code and turn Settings Sync on
    - Microsoft Teams and Remote Desktop
    - OpenVPN Connect v3. Follow [devops VPN guide](http://git.bms.nuvation.com/bms07/bms-device/-/wikis/Infrastructure/VPN#macos)
 
-5. Install the follows apps for personal use:
+6. Install the follows apps for personal use:
    - Chrome or Firefox
    - Spotify
    - Adobe Acrobat Reader DC
