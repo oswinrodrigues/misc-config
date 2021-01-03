@@ -34,6 +34,7 @@ macOS
    - Adobe Acrobat Reader DC
    - Zoom, Discord, Kakao Talk
    - Microsoft Word, Excel
+   - CleanMyMac - also setup [these settings](https://macpaw.com/how-to/fix-mac-running-slow) for better performance
 
 6. The following apps are non-essential, for #pandemicfunzies:
    - BlueStacks (emulator for Among Us)
