@@ -20,13 +20,14 @@ macOS
 3. Copy `.zshrc` config file from this repo
 
 4. Install [Homebrew](https://brew.sh/). Then, using this, install:
-   - `python` and `pip`
+   - `python` (includes `pip`)
    - `tmux`
 
 5. Install the following apps for work use:
    - VS Code and turn Settings Sync on
    - Microsoft Teams and Remote Desktop
    - OpenVPN Connect v3. Follow [devops VPN guide](http://git.bms.nuvation.com/bms07/bms-device/-/wikis/Infrastructure/VPN#macos)
+     - Alternatively, `brew install openvpn` and `pip install pexpect pyotp` to then run the `vpn_nuv_tunnel.py` [script](http://git.bms.nuvation.com/-/snippets/53)
 
 6. Install the follows apps for personal use:
    - Chrome or Firefox
