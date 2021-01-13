@@ -15,6 +15,7 @@
 	pl = pull
 	ps = push
 	psf = push -f
+	pso = push -o ci.skip
 	psfo = push -f -o ci.skip
 	rb = rebase
 [core]
