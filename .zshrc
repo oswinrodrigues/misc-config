@@ -107,8 +107,9 @@ fi
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nuvssh='sudo ifconfig lo0 alias 127.0.222.222 up && ssh -L 127.0.222.222:1194:10.202.10.0:1194 -t ORodrigues@wdcsshgateway.nuvation.com ssh -N ORodrigues@sshendpoint.nuvation.com'
+# alias ohmyzsh="mate ~/.oh-my-zsh" 
+alias nuvpn='sudo python3 ~/nuvpn_tunnel_magic.py' # See http://git.bms.nuvation.com/-/snippets/55 for script
+alias nuvcode='code --folder-uri "vscode-remote://ssh-remote+PINGU/home/orodrigues/bms-device"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
