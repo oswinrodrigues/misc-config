@@ -25,6 +25,7 @@ macOS
 
 5. Install the following apps for work use:
    - VS Code and turn Settings Sync on
+     - Run `ssh-copy-id orodrigues@pingu` to simplify _Remote - SSH_ session setup. This works only if `~/.ssh/id_rsa.pub` exists. If not, first run `ssh-keygen` with all the default responses.
    - Microsoft Teams and Remote Desktop
    - OpenVPN Connect v3. Follow [devops VPN guide](http://git.bms.nuvation.com/bms07/bms-device/-/wikis/Infrastructure/VPN#macos)
      - Alternatively, `brew install openvpn` and `sudo pip3 install pexpect pyotp` to then run the `nuvpn_tunnel_magic.py` [script](http://git.bms.nuvation.com/-/snippets/55)
