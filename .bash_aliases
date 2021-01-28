@@ -1,7 +1,8 @@
 # Nuvation-specific
 # -----------------
 
-# On dev machine (Pingu or WDC dev VM)
+# On dev machine (Pingu or CERISE VM)
+# Replace "nuvproc -m <num>" with "nproc" for VM
 alias nuvmake="make -j $(nuvproc -m 1.6)"
 alias nuvlint3="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint3 -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
 alias nuvlint2="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
