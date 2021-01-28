@@ -1,10 +1,11 @@
 # Nuvation-specific
 # -----------------
 
-# On dev machine (Pingu or WDC workstation)
+# On dev machine (Pingu or WDC dev VM)
 alias nuvmake="make -j $(nuvproc -m 1.6)"
 alias nuvlint3="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint3 -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
 alias nuvlint2="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
+alias nuvmnt="sudo mount -t cifs //pingu.bms.nuvation.com/orodrigues/ /mnt/pingu/ -o user=orodrigues,uid=1000,gid=1000" # On VM
 # On local machine (personal, at-home)
 alias nuvpn='sudo python3 ~/nuvpn_tunnel_magic.py' # See http://git.bms.nuvation.com/-/snippets/55 for script
 alias nuvcode='code --folder-uri "vscode-remote://ssh-remote+PINGU/home/orodrigues/bms-device"'
