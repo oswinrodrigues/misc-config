@@ -8,6 +8,7 @@ Linux
 3. Get VS Code and turn [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) on
 4. Get [GNOME Tweaks tool and Dash-to-Panel extension](https://addictivetips.com/ubuntu-linux-tips/use-dash-panel-to-make-gnome-shell-look-like-windows)
 5. For work, follow [devops VM guide](http://git.bms.nuvation.com/bms07/bms07-devops/-/blob/master/README.md)
+    - Run `sudo apt-get install openssh-server` in order to SSH into the VM from local machine over VPN
     - Run `sudo apt install cifs-utils` in order to then run `nuvmnt` alias command (see `.bash_aliases`)
 
 macOS
