@@ -1,12 +1,35 @@
 # Nuvation-specific
 # -----------------
 
-# On dev machine (Pingu or CERISE VM)
+# On dev machine (Pingu server or CERISE VM)
 # Replace "nuvproc -m <num>" with "nproc" for VM
-alias nuvmake="make -j $(nuvproc -m 1.6)"
-alias nuvlint3="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint3 -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
-alias nuvlint2="export PYTHONPATH=$PYTHONPATH:$(pwd) && pylint -j $(nuvproc -m 0.5) --rcfile=config/pylintrc"
-alias nuvmnt="sudo mount -t cifs //pingu.bms.nuvation.com/orodrigues/ /mnt/pingu/ -o user=orodrigues,uid=1000,gid=1000" # On VM
+alias nuvmake="make -j $(nuvproc -m 1.6) -C ~/bms-device/fw"
+alias nuvlint3="export PYTHONPATH=$PYTHONPATH:~/bms-device &&
+                pylint3 -j $(nuvproc -m 0.5) --rcfile=~/bms-device/config/pylintrc"
+alias nuvlint2="export PYTHONPATH=$PYTHONPATH:~/bms-device &&
+                pylint -j $(nuvproc -m 0.5) --rcfile=~/bms-device/config/pylintrc"
+
+# On VM only
+alias nuvmnt="sudo mount                                                         \
+              --types cifs                                                       \
+              --source //pingu.bms.nuvation.com/orodrigues/bms-device/fw/bin     \
+              --target /mnt/pingu-builds/                                        \
+              --options user=orodrigues,uid=1000,gid=1000"
+alias nuvflashsc="~/bms-device/py3/tools/flash.py sc                             \
+                  --programmer BusBlaster                                        \
+                  --usb nebb13                                                   \
+                  --sc_firmware /mnt/pingu-builds/tiva/sc.bin                    \
+                  --sc_bootloader /mnt/pingu-builds/tiva_small/sc_bootloader.bin \
+                  --mass_erase"
+alias nuvflashpi="~/bms-device/py3/tools/flash.py pi                             \
+                  --programmer BusBlaster                                        \
+                  --usb nebb17                                                   \
+                  --pi_firmware /mnt/pingu-builds/stm32/pi.bin                   \
+                  --pi_bootloader /mnt/pingu-builds/stm32/pi_bootloader.bin      \
+                  --mass_erase"
+alias nuvflashtar="~/bms-device/py/tools/http_upgrade.py tar                     \
+                   --tarball /mnt/pingu-builds/upgrade.tar"
+
 # On local machine (personal, at-home)
 alias nuvpn='sudo python3 ~/nuvpn_tunnel_magic.py' # See http://git.bms.nuvation.com/-/snippets/55 for script
 alias nuvcode='code --folder-uri "vscode-remote://ssh-remote+PINGU/home/orodrigues/bms-device"'
