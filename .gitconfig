@@ -13,10 +13,12 @@
 	camd = commit -a --amend
 	st = status
 	pl = pull
+	plm = pull origin master
 	ps = push
 	psf = push -f
 	pso = push -o ci.skip
 	psfo = push -f -o ci.skip
 	rb = rebase
+	rbm = rebase master
 [core]
 	editor = code -w
