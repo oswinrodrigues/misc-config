@@ -14,10 +14,10 @@
 	st = status
 	pl = pull
 	plm = pull origin master
-	ps = push origin
-	psf = push -f origin
-	pso = push -o ci.skip origin
-	psfo = push -f -o ci.skip origin
+	ps = push
+	psf = push -f
+	pso = push -o ci.skip
+	psfo = push -f -o ci.skip
 	rb = rebase
 	rbm = rebase master
 [core]
