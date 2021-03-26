@@ -8,6 +8,10 @@ alias nuvlint3="export PYTHONPATH=$PYTHONPATH:~/bms-device &&
                 pylint3 -j $(nuvproc -m 0.5) --rcfile=~/bms-device/config/pylintrc"
 alias nuvlint2="export PYTHONPATH=$PYTHONPATH:~/bms-device &&
                 pylint -j $(nuvproc -m 0.5) --rcfile=~/bms-device/config/pylintrc"
+alias nuvtestbms="~/bms-device/fw/bin/x86/bms_test.exe -c"
+alias nuvtestsc="~/bms-device/fw/bin/x86/sc_test.exe -c"
+alias nuvtestpi="~/bms-device/fw/bin/x86/pi_test.exe -c"
+alias nuvtest="nuvtestbms && nuvtestsc && nuvtestpi"
 
 # On VM only
 alias nuvmnt="sudo mount                                                         \
@@ -29,6 +33,7 @@ alias nuvflashpi="~/bms-device/py3/tools/flash.py pi                            
                   --mass_erase"
 alias nuvflashtar="~/bms-device/py/tools/http_upgrade.py tar                     \
                    --tarball /mnt/pingu-builds/upgrade.tar"
+alias nuvflash="nuvflashsc && nuvflashpi"
 
 # On local machine (personal, at-home)
 alias nuvpn='sudo python3 ~/nuvpn_tunnel_magic.py' # See http://git.bms.nuvation.com/-/snippets/55 for script
