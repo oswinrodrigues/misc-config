@@ -35,6 +35,7 @@ macOS
 
 6. Install the follows apps for personal use:
    - Cloud Battery
+   - Logitech [Options](https://www.logitech.com/en-ca/product/options) (for K380 keyboard)
    - Firefox (Sync)
    - Spotify (Rosetta-only)
    - Adobe Acrobat Reader DC (Rosetta-only)
