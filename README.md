@@ -34,8 +34,8 @@ macOS
      - Alternatively, the OpenVPN Connect v3 GUI. Follow [devops VPN guide](http://git.bms.nuvation.com/bms07/bms-device/-/wikis/Infrastructure/VPN#macos)
 
 6. Install the follows apps for personal use:
-   - Cloud Battery
-   - Logitech [Options](https://www.logitech.com/en-ca/product/options) (for K380 keyboard)
+   - [Battery Monitor: Health, Info](https://apps.apple.com/ca/app/battery-monitor-health-info/id836505650) app. Set notifications for 20% and 80% charge levels.
+   - Logitech [Options](https://www.logitech.com/en-ca/product/options) (for K380 keyboard). Mainly for Mission Control and Launchpad keys.
    - Firefox (Sync)
    - Spotify (Rosetta-only)
    - Adobe Acrobat Reader DC (Rosetta-only)
