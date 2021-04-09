@@ -36,11 +36,11 @@ macOS
 6. Install the follows apps for personal use:
    - [Battery Monitor: Health, Info](https://apps.apple.com/ca/app/battery-monitor-health-info/id836505650) app. Set notifications for 20% and 80% charge levels.
    - Logitech [Options](https://www.logitech.com/en-ca/product/options) (for K380 keyboard). Mainly for Mission Control and Launchpad keys.
+   - Notion
    - Firefox (Sync)
    - Spotify (Rosetta-only)
    - Adobe Acrobat Reader DC (Rosetta-only)
-   - Zoom, Discord (Rosetta-only), Kakao Talk (Untested)
-   - (Microsoft Word, Excel)
+   - Zoom, Discord (Rosetta-only), Kakao Talk (Untested), Signal (Rosetta-only), Telegram
    - (Also maybe setup [these settings](https://macpaw.com/how-to/fix-mac-running-slow) for better performance)
 
 6. The following apps are non-essential, for #pandemicfunzies:
