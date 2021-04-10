@@ -30,8 +30,10 @@ macOS
      - Run `ssh-copy-id orodrigues@pingu` to simplify _Remote - SSH_ session setup. This works only if `~/.ssh/id_rsa.pub` exists. If not, first run `ssh-keygen` with all the default responses.
    - Microsoft Teams and Remote Desktop
      - At time of writing, RDP's M1-compatible release was _not_ the (red) one on the App Store. It was a (blue) Beta on their website. As well Teams was Rosetta-only.
-   - OpenVPN. Run `brew install openvpn` and `sudo pip3 install pexpect pyotp`. Then get the `.ovpn` file from SDI. Then get the `nuvpn_tunnel_magic.py` [script](http://git.bms.nuvation.com/-/snippets/55). (Might need to change home directory name i.e. `oswinrodrigues`). Finally run `nuvpn` alias.
-     - Alternatively, the OpenVPN Connect v3 GUI. Follow [devops VPN guide](http://git.bms.nuvation.com/bms07/bms-device/-/wikis/Infrastructure/VPN#macos)
+   - [Tunnelblick](https://tunnelblick.net/downloads.html). And `.ovpn` [config file](https://nuvation.sharepoint.com/:u:/r/allnuvation/it/Shared%20Documents/NuvationVPN/wdc_installers_configs/wdcfw-UDP4-1194-config.ovpn?csf=1&web=1&e=zAzebl)
+     - Ensure this is the unified config file i.e. with the certificate and key pasted inside (open with text editor to verify), and **not** the one alongside `.crt` and `.key` files. In other words, choose `wdcfw-UDP4-1194-config.ovpn` and not `wdcfw-UDP4-1194.ovpn`.
+     - After importing config, under `Settings` on right, change `OpenVPN version` from `Default (2.4.9 - OpenSSL v1.1.1k)` to `Latest (2.5.0 - OpenSSL v1.1.1k)`. If options are greyed out, quit and restart app.
+     - When hit `Connect` and entering credentials, save to Keychain. Then in `System Preferences` > `Users & Groups` > `Login Items`, add Tunnelblick. This allows for a 1-click VPN connection.
 
 6. Install the follows apps for personal use:
    - [Battery Monitor: Health, Info](https://apps.apple.com/ca/app/battery-monitor-health-info/id836505650) app. Set notifications for 20% and 80% charge levels.
