@@ -36,7 +36,6 @@ alias nuvflashtar="~/bms-device/py/tools/http_upgrade.py tar                    
 alias nuvflash="nuvflashsc && nuvflashpi"
 
 # On local machine (personal, at-home)
-alias nuvpn='sudo python3 ~/nuvpn_tunnel_magic.py' # See http://git.bms.nuvation.com/-/snippets/55 for script
 alias nuvcode='code --folder-uri "vscode-remote://ssh-remote+PINGU/home/orodrigues/bms-device"'
 
 # General
